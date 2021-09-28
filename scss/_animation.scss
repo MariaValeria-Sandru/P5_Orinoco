@@ -1,0 +1,15 @@
+@import"_check.scss";
+@keyframes cards {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,112 @@
+.page__menu {
+  .fig__restaurants {
+    @include img-ratio;
+    height: $img-size;
+  }
+  .restaurants__article {
+    position: relative;
+    background-color: $base-bg;
+    border-radius: 3rem 3rem 0 0;
+    margin-top: -3rem;
+    padding: 2rem 1rem;
+    .restaurants__core {
+      position: relative;
+      h2 {
+        font-family: "shrikhand";
+        font-size: 1.75rem;
+      }
+      .heart {
+        position: absolute;
+        bottom: 0.3rem;
+        right: 1rem;
+        background-color: $base-bg;
+      }
+    }
+    .restaurants__section {
+      &__title {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 2rem 0 1.5rem 0;
+        font-size: 1rem;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color:$color-mint;
+          width: 2.5rem;
+          height: 0.25rem;
+          top: 1.5rem;
+          left: 0;
+        }
+      }
+      .cards {
+        overflow: hidden;
+        opacity: 0;
+        animation: cards 1s forwards ease-out;
+        .restaurants__desc {
+          overflow: hidden;
+          white-space: nowrap;
+          flex: 1;
+          h2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.95rem;
+          }
+        }
+        .price {
+          display: flex;
+          font-weight: bold;
+          align-items: flex-end;
+          margin: 0.75rem;
+        }
+        &:hover {
+          .price {
+            margin-right: 5rem;
+            transition: margin-right 500ms;
+          }
+          .check {
+            transform: translateX(0);
+            transition: transform 500ms;
+            i {
+              transform: rotate(360deg);
+              transition: transform 500ms;
+            }
+          }
+        }
+        &__1 {
+          @include start(1);
+        }
+        &__2 {
+          @include start(3);
+        }
+        &__3 {
+          @include start(5);
+        }
+      }
+      &__footer {
+        text-align: center;
+        .btn {
+          padding: 1rem 3rem;
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+  @include media(lg) {
+    .restaurants__section__menu {
+      display: flex;
+      section {
+        min-width: 32%;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  @include media(xl) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

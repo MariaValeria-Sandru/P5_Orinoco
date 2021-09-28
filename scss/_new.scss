@@ -1,0 +1,11 @@
+.new {
+  position: absolute;
+  background-color: $color-mint;
+  font-weight: bold;
+  font-size: 0.875rem;
+  border-radius: 0.125rem;
+  color: darken($color: $color-mint, $amount: 40%);
+  padding: 0.375rem 0.75rem;
+  right: 1rem;
+  top: 1rem;
+}
