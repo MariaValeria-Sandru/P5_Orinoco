@@ -176,16 +176,16 @@ img {
   color: #9356dc;
 }
 
-.page .restaurants {
+.page .produits {
   background-color: #f6f6f6;
   padding: 3rem 1rem 2rem;
 }
 
-.page .restaurants__core {
+.page .produits__core {
   position: relative;
 }
 
-.page .restaurants__core .links__restaurants {
+.page .produits__core .links__produits {
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -194,7 +194,7 @@ img {
   height: 15rem;
 }
 
-.page .restaurants__core .links__restaurants figure {
+.page .produits__core .links__produits figure {
   position: relative;
   overflow: hidden;
   -webkit-box-flex: 1;
@@ -203,7 +203,7 @@ img {
   border-radius: 1rem 1rem 0 0;
 }
 
-.page .restaurants__core .links__restaurants figure img {
+.page .produits__core .links__produits figure img {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
