@@ -1,15 +1,15 @@
 .page__menu {
-  .fig__restaurants {
+  .fig__produits{
     @include img-ratio;
     height: $img-size;
   }
-  .restaurants__article {
+  .produits__article {
     position: relative;
     background-color: $base-bg;
     border-radius: 3rem 3rem 0 0;
     margin-top: -3rem;
     padding: 2rem 1rem;
-    .restaurants__core {
+    .produits__core {
       position: relative;
       h2 {
         font-family: "shrikhand";
@@ -22,7 +22,7 @@
         background-color: $base-bg;
       }
     }
-    .restaurants__section {
+    .produits__section {
       &__title {
         position: relative;
         text-transform: uppercase;
@@ -43,7 +43,7 @@
         overflow: hidden;
         opacity: 0;
         animation: cards 1s forwards ease-out;
-        .restaurants__desc {
+        .produits__desc {
           overflow: hidden;
           white-space: nowrap;
           flex: 1;
@@ -97,7 +97,7 @@
     }
   }
   @include media(lg) {
-    .restaurants__section__menu {
+    .produits__section__menu {
       display: flex;
       section {
         min-width: 32%;

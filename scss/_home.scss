@@ -83,12 +83,12 @@
       }
     }
   }
-  .restaurants {
+  .produits{
     background-color: $base-bg;
     padding: 3rem 1rem 2rem;
     &__core{
       position: relative;
-       .links__restaurants {
+       .links__produits {
         height: 100%;
         flex-direction: column;
         height: $img-size;
@@ -110,7 +110,7 @@
         text-align: center;
       }
     }
-    .restaurants__grid {
+    .produits__grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
@@ -119,7 +119,7 @@
         margin: 0;
       }
     }
-    .restaurants {
+    .produits {
       header {
         h2 {
           margin-bottom: 1rem;
@@ -146,7 +146,7 @@
         }
       }
     }
-    .restaurants {
+    .produits {
       padding: 3rem 2rem 2rem;
       &__grid {
         gap: 2rem;
@@ -161,7 +161,7 @@
         }
       }
     }
-    .restaurants {
+    .produits {
       padding: 3rem;
       &__grid {
         gap: 3rem;
@@ -175,7 +175,7 @@
       border-left: 2px solid $base-bg;
       border-right: 2px solid $base-bg;
     }
-    .restaurants {
+    .produits {
 
       padding: 4rem;
       &__grid {
