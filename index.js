@@ -30,10 +30,21 @@ fetch("http://localhost:3000/api/furniture")
 				`
         }
   });
-
+// Mise en place des éléments pour construire la page //
   async function furnitureList() {
 	const furnitureList = await getFurnitureProducts();
+
+	// Ajout de la liste des produits //
 	let productsList = document.getElementById("listemeubles");
 }
 
-	
+// Affichage du nombre d'articles dans le panier //
+function showItems() {
+  let cartItems = document.getElementById("indexPanier");
+  if (cart != null) {
+  	cartItems.textContent = cart.length;
+  } else {
+  	cartItems.textContent = 0;
+  }
+  };
+showItems();	
