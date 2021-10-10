@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Produit</title>
 </head>
 <body>
+    <header class="liens">
+        <nav>           
+            <div id="cart">
+              <a href="panier.html" class="lienpanier">
+                <img src="img/cartorinoco.png" alt="Logo panier" id="cartorinoco" />
+                <span id="indexPanier"></span>
+              </a>
+              
+            </div>                                
+          </nav>  
+
+          <div id="logocontainer">
+              <a href="index.html" class="lienindex">
+                  <img src="img/logoorinoco.png" alt="logo Orinoco" id="logoorinoco" />
+              </a>
+              <h1>Orinoco</h1>
+          </div>
+    </header>
     
+
+    <div class="page">
+        <div class="nav">
+            <div class="homepage">
+                <form class="homepage__form"><i class="fas fa-map-marker-alt"></i>
+                    <input class="homepage__form__input" type="search" placeholder="Paris,Belleville">
+                </form>
+                <section class="homepage__explore">
+                    <h2>Meubles en chêne</h2>
+                    <p>Découvrez Meubles des d'exception, séléctionnés par nos soins.</p>
+                    <button class="btn">Explorer nos produits </button>
+                </section>
+            </div>
+            <section class="operation">
+                <h2></h2>
+                <nav class="operation__nav">
+                    <ol>
+                        <li>
+                            <a href="#"><i class="fas fa-mobile-alt"></i>
+                                <p>Commande</p>
+                             </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-list-ul"></i>
+                                <p>Choisissez le livreson</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-store"></i>
+                                <p>Paiement sécurisé</p>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </section>
+        </div>
+
+        <main>
+            <section id="selectionproduit">
+              <div id="selectionoption">
+                  <label for="choixoption">Personnalisez votre meuble :</label>
+                  <select name="option" id="choixoption"></select>          
+              </div>
+    
+              <button id="boutonacheter">Acheter</button>
+            </section>
+          </main>
+
+          <footer class="footer">
+            <h2>Orinoco</h2>
+            <nav class="footer__nav">
+                <ul>
+                    
+                    
+                    <li><a class="links" href="#">
+                            <p>Mentions légales</p>
+                        </a>
+                    </li>
+                    <li><a class="links" href="mailto:contact@orinoco.com" class="far fa-envelope" title="Lien vers le mail contact Orinoco"></a>Contact
+                         </a>
+                    </li>
+                </ul>
+                <div id="reseaux">
+                    <a href="#" class="fa fa-twitter" title="Lien vers le compte Twitter"></a>
+                    <a href="#" class="fa fa-facebook" title="Lien vers le compte Facebook"></a>
+                    <a href="#" class="fa fa-instagram" title="Lien vers le compte Instagram"></a>
+                </div>
+            </nav>
+
+    <script src="produit.js"></script>
 </body>
 </html>
