@@ -10,7 +10,7 @@
         "../scss/_header.scss",
         "../scss/_home.scss",
         "../scss/_variables.scss",
-        "../scss/_restaurants.scss",
+        "../scss/_produits.scss",
         "../scss/_load.scss",
         "../scss/_mixins.scss",
         "../scss/_heart.scss",

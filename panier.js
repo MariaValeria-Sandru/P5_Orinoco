@@ -1,11 +1,9 @@
-fetch("http://localhost:3000/api/furniture")
-  .then(function (response) {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-    for (i=0 ;i<data.length ; i++)
-        {
-					var elt = data[i]
-					console.log(elt)
-                    document.getElementById("produits__grid").innerHTML += `
+
+// Recuperer tout ce qui se trouve dans le localstorage et l'afficher
+/* Un exemple du contenu du panier
+const panier = [
+	{id: "99898237423279", quantite: 3, varnish: "Tan"},
+	{id: "00-090028r", quantite: 1, varnish: "Chocolate"},
+	{id: "99898237423279", quantite: 3, varnish: "Tan"}
+]
+*/

@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produit</title>
-</head>
-<body>
-    <header class="liens">
-        <nav>           
-            <div id="cart">
-              <a href="panier.html" class="lienpanier">
-                <img src="img/cartorinoco.png" alt="Logo panier" id="cartorinoco" />
-                <span id="indexPanier"></span>
-              </a>
-              
-            </div>                                
-          </nav>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
 
-          <div id="logocontainer">
-              <a href="index.html" class="lienindex">
-                  <img src="img/logoorinoco.png" alt="logo Orinoco" id="logoorinoco" />
-              </a>
-              <h1>Orinoco</h1>
-          </div>
+    <script
+      src="https://kit.fontawesome.com/955a7b86f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title> </title>
+  </head>
+  <body>
+    <header>
+      <div class="title title--produit">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <h1>Orinoco</h1>
+      </div>
     </header>
-    
-
-    <div class="page">
-        <div class="nav">
-            <div class="homepage">
-                <form class="homepage__form"><i class="fas fa-map-marker-alt"></i>
-                    <input class="homepage__form__input" type="search" placeholder="Paris,Belleville">
-                </form>
-                <section class="homepage__explore">
-                    <h2>Meubles en chêne</h2>
-                    <p>Découvrez Meubles des d'exception, séléctionnés par nos soins.</p>
-                    <button class="btn">Explorer nos produits </button>
-                </section>
-            </div>
-            <section class="operation">
-                <h2></h2>
-                <nav class="operation__nav">
-                    <ol>
-                        <li>
-                            <a href="#"><i class="fas fa-mobile-alt"></i>
-                                <p>Commande</p>
-                             </a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-list-ul"></i>
-                                <p>Choisissez le livreson</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-store"></i>
-                                <p>Paiement sécurisé</p>
-                            </a>
-                        </li>
-                    </ol>
-                </nav>
-            </section>
+    <main class="page__menu">
+      <figure class="fig__produits"></figure>
+      <article class="produits__article">
+        <div id="produits"></div>
+        <div class="produits__core">
+          <h2 id="produit_titre"></h2>
+          <button class="heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
+        <div class="produits__section">
+          <div class="produits__section__menu">
+            <img src="" id="produit_image" />
+          </div>
+          <form action="">
+            <label for="quantite">Quantité</label>
+            <input type="number" name="quantite" id="quantite"/>
 
-        <main>
-            <section id="selectionproduit">
-              <div id="selectionoption">
-                  <label for="choixoption">Personnalisez votre meuble :</label>
-                  <select name="option" id="choixoption"></select>          
-              </div>
-    
-              <button id="boutonacheter">Acheter</button>
-            </section>
-          </main>
-
-          <footer class="footer">
-            <h2>Orinoco</h2>
-            <nav class="footer__nav">
-                <ul>
-                    
-                    
-                    <li><a class="links" href="#">
-                            <p>Mentions légales</p>
-                        </a>
-                    </li>
-                    <li><a class="links" href="mailto:contact@orinoco.com" class="far fa-envelope" title="Lien vers le mail contact Orinoco"></a>Contact
-                         </a>
-                    </li>
-                </ul>
-                <div id="reseaux">
-                    <a href="#" class="fa fa-twitter" title="Lien vers le compte Twitter"></a>
-                    <a href="#" class="fa fa-facebook" title="Lien vers le compte Facebook"></a>
-                    <a href="#" class="fa fa-instagram" title="Lien vers le compte Instagram"></a>
-                </div>
-            </nav>
-
+            <label for="varnish">Varnish</label>
+            <select name="varnish" id="product_varnish"></select>
+          </form>
+          <footer class="produits__section__footer">
+            <button class="btn" id="btn_commander">Commander</button>
+          </footer>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <h2>Orinoco</h2>
+      <nav class="footer__nav">
+        <ul>
+          <li>
+            <a class="links" href="#">
+              <p>Mentions légales</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="links"
+              href="mailto:contact@orinoco.com"
+              class="far fa-envelope"
+              title="Lien vers le mail contact Orinoco"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+        <div id="address">
+          <address>
+            <p>Tél : 0800 800 007</p>
+          </address>
+        </div>
+        <div id="reseaux">
+          <a
+            href="#"
+            class="fa fa-twitter"
+            title="Lien vers le compte Twitter"
+          ></a>
+          <a
+            href="#"
+            class="fa fa-facebook"
+            title="Lien vers le compte Facebook"
+          ></a>
+          <a
+            href="#"
+            class="fa fa-instagram"
+            title="Lien vers le compte Instagram"
+          ></a>
+        </div>
+      </nav>
+    </footer>
     <script src="produit.js"></script>
-</body>
+  </body>
 </html>
